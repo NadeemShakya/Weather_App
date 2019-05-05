@@ -13,7 +13,10 @@ body {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-
+a {
+    text-decoration: underline;
+    color: inherit;
+}
 .mainWrapper {
     background-color: #f2f2f2;
     width: 80%;
@@ -63,10 +66,16 @@ button {
     color: #fff;
     border:1px solid #D96B62;
     border-radius: 2px;
-    /* margin: 20px auto; */
-    width: 90%;
+    display: block;
+    margin: 10px auto;
+    width: auto;
+    font-size: .8em;
+
 }
 
+.userLocationDiv {
+    display: none;
+}
 
 input:focus, button:focus{
     outline: none;
@@ -98,6 +107,7 @@ input:focus, button:focus{
 .error_message {
     margin: 5%;
     text-align: center;
+    display: block;
 
 }
 footer {
@@ -126,10 +136,7 @@ footer {
     .header {
         margin: 4% 0;
     }
-    button{
-        width: 20%;
-        
-    }
+
     button:hover {
         background-color: #f2f2f2;
         border:1px solid #D96B62;
@@ -157,4 +164,10 @@ footer {
         justify-content: space-between;
     }
 
+}
+
+@media only screen and (min-width: 1200px) {
+    .userLocationDiv {
+        display: block;
+    }
 }

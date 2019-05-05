@@ -3,7 +3,6 @@ import Header from './Header';
 export default class Weather extends React.Component {
     
     render() {
-        let weather_icon = `http://openweathermap.org/img/w/${this.props.weather_icon}.png`
 
         return(
             <div className = "weatherDiv">
