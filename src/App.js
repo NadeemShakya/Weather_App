@@ -54,7 +54,7 @@ export default class App extends React.Component {
       navigator.geolocation.getCurrentPosition(async (position) => {
         latitude = position.coords.latitude;
         longitude = position.coords.longitude;
-        const apicall = await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${APIKEY}&units=metric`);
+        const apicall = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${APIKEY}&units=metric`);
         const response = await apicall.json();
         this.setInformation(apicall, response);
       })
@@ -69,7 +69,7 @@ export default class App extends React.Component {
     let city = event.target.elements.city.value;
     let APIKEY = '460aa9fb3b4ece57fb5d94dc910417fa';
     try{
-      const apicall = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${APIKEY}&units=metric`);
+      const apicall = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${APIKEY}&units=metric`);
       const response =  await apicall.json();
       if(country && city) {
         this.setInformation(apicall, response);
