@@ -1,7 +1,7 @@
 ## Weather App
 A weather application built using ReactJs.
 
-
+<img src = './Screenshot/Weather_App.PNG' alt = "Weather_App_Image" />
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
